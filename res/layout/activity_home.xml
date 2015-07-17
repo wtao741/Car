@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bgm"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/head_bgm" >
+
+        <TextView
+            android:id="@+id/home_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="北京"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="万车达·管家"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@drawable/home_my_car_select" >
+        
+         <com.wancheda.view.RoundImageView
+            android:id="@+id/my_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhiyan" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/home_park_select" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="37dp"
+            android:text="机场停车"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignLeft="@id/textView2"
+            android:layout_marginTop="30dp"
+            android:text="通过万车达购买人保车险可免费享受机场停车服务"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/home_car_select" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="37dp"
+            android:text="管家上门"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_alignLeft="@id/textView3"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="35dp"
+            android:text="上门保养、上门维修、上门送单，万车达为您提供优质的服务"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_margin="3dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+        </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="right" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    
+</LinearLayout>
