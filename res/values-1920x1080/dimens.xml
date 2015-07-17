@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="head_height">130px</dimen>
+
+    <!-- activity_call -->
+    <dimen name="px_268">268px</dimen>
+    <dimen name="px_473">473px</dimen>
+    <dimen name="px_20">20px</dimen>
+    <dimen name="px_40">40px</dimen>
+    <dimen name="px_35">30px</dimen>
+    <dimen name="px_50">50px</dimen>
+
+</resources>

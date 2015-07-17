@@ -5,4 +5,6 @@
     <color name="home_bgm">#d3d3d3</color>
     <color name="white">#ffffff</color>
     <color name="line_black">#2E2E2E</color>
+    <color name="e4">#E4E4E4</color>
+    <color name="call_textColor">#ff5837</color>
 </resources>

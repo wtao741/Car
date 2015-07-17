@@ -4,9 +4,26 @@
     <string name="app_name">CarManager</string>
     <string name="hello_world">&#xe601;</string>
     <string name="action_settings">Settings</string>
-
     <string name="tab_main">首页</string>
-     <string name="tab_order">订单</string>
-      <string name="tab_my">我的</string>
-       <string name="tab_call">客服</string>
+    <string name="tab_order">订单</string>
+    <string name="tab_my">我的</string>
+    <string name="tab_call">客服</string>
+    
+    <string name="call_vip">万车达旗舰店</string>
+    <string name="call_vip_address">地址：机场二高速,金榆路口出金榆路第二个红绿灯</string>
+    <string name="call_vip_phone_hint">电话：</string>
+    <string name="call_vip_phone"> 010-8430-3353</string>
+   
+    <string name="call_south">万车达南中心</string>
+    <string name="call_south_address">地址：南四环,肖村桥往南第二个红绿灯右转即到</string>
+    <string name="call_south_phone"> 010-6113-7113</string>
+   
+    <string name="call_north">万车达北中心</string>
+    <string name="call_north_address">地址：北五环,天通苑龙德广场往西1.8公里即到</string>
+    <string name="call_north_phone"> 010-8241-9535</string>
+   
+    <string name="call_cdu">成都分中心</string>
+    <string name="call_cdu_address">地址：日月大道二段128段</string>
+    <string name="call_cdu_phone"> 028-6199-5518</string>
+
 </resources>
