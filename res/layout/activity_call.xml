@@ -9,16 +9,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/px_268"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/px_20"
         android:background="@color/white"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_weight="1" >
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="13dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:text="@string/call_vip"
             android:textColor="@color/call_textColor"
@@ -26,9 +28,9 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="13dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:gravity="center_vertical"
             android:text="@string/call_vip_address"
             android:textColor="@color/call_textColor"
@@ -36,10 +38,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:orientation="horizontal"
-            android:layout_marginTop="11dp"
-            android:layout_marginLeft="13dp">
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+             >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,11 +53,12 @@
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/call_vip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="@string/call_vip_phone"
-                android:textColor="@color/head_bgm"
+                android:textColor="@drawable/call_select"
                 android:textSize="13sp"
                 android:textStyle="italic" />
         </LinearLayout>
@@ -64,25 +68,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/px_268"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="@color/white"
         android:orientation="vertical" >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="14dp"
-            android:layout_weight="1.2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/call_south"
             android:textColor="@color/call_textColor"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginLeft="14dp"
-            android:layout_weight="1.2"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/call_south_address"
             android:textColor="@color/call_textColor"
@@ -91,25 +97,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:orientation="horizontal" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="14dp"
+                android:layout_marginLeft="10dp"
                 android:text="@string/call_vip_phone_hint"
                 android:textColor="@color/call_textColor"
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/call_south"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:text="@string/call_south_phone"
-                android:textColor="@color/head_bgm"
+                android:textColor="@drawable/call_select"
                 android:textSize="13sp"
                 android:textStyle="italic" />
         </LinearLayout>
@@ -119,25 +126,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/px_268"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="@color/white"
         android:orientation="vertical" >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="14dp"
-            android:layout_weight="1.2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/call_north"
             android:textColor="@color/call_textColor"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginLeft="14dp"
-            android:layout_weight="1.2"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/call_north_address"
             android:textColor="@color/call_textColor"
@@ -146,25 +155,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:orientation="horizontal" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="14dp"
+                android:layout_marginLeft="10dp"
                 android:text="@string/call_vip_phone_hint"
                 android:textColor="@color/call_textColor"
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/call_north"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:text="@string/call_north_phone"
-                android:textColor="@color/head_bgm"
+                android:textColor="@drawable/call_select"
                 android:textSize="13sp"
                 android:textStyle="italic" />
         </LinearLayout>
@@ -174,26 +184,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/px_268"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
         android:background="@color/white"
-        android:orientation="vertical"
-        android:weightSum="7.2" >
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="14dp"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:text="@string/call_cdu"
             android:textColor="@color/call_textColor"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginLeft="14dp"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:gravity="center_vertical"
             android:text="@string/call_cdu_address"
             android:textColor="@color/call_textColor"
@@ -202,39 +213,47 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.2"
+            android:layout_weight="1"
             android:orientation="horizontal" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="14dp"
+                android:layout_marginLeft="10dp"
                 android:text="@string/call_vip_phone_hint"
                 android:textColor="@color/call_textColor"
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/call_cdu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:text="@string/call_cdu_phone"
-                android:textColor="@color/head_bgm"
+                android:textColor="@drawable/call_select"
                 android:textSize="13sp"
                 android:textStyle="italic" />
         </LinearLayout>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            />
     </LinearLayout>
-
+    
+    <include layout="@layout/line_head"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/px_268"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:gravity="center" >
 
         <ImageView
+            android:id="@+id/call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/call" />
     </LinearLayout>
-
 </LinearLayout>
