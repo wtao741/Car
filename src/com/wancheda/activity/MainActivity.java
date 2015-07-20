@@ -3,6 +3,8 @@ package com.wancheda.activity;
 import java.io.IOException;
 import java.util.List;
 
+import cn.bmob.v3.Bmob;
+
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.GeofenceClient;
@@ -49,10 +51,15 @@ public class MainActivity extends TabActivity implements OnClickListener{
 	public GeofenceClient mGeofenceClient;
 	public MyLocationListener mMyLocationListener;
 	
+	private static String APP_ID = "5836bccc74527302934dd7848ae36184";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		Bmob.initialize(this, APP_ID);
+		
 		prepareIntent();
 		setupIntent();
 		prepareView();
