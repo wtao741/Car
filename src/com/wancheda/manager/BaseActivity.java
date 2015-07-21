@@ -1,6 +1,5 @@
 package com.wancheda.manager;
 
-import com.wancheda.activity.R;
 
 import android.view.View;
 import android.view.View.OnClickListener;

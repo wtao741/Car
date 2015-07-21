@@ -9,4 +9,8 @@
      <dimen name="px_40">20px</dimen>
      <dimen name="px_35">17.5px</dimen>
       <dimen name="px_50">25px</dimen>
+      <dimen name="px_172">86px</dimen>
+      
+        <dimen name="px_97">48px</dimen>
+    <dimen name="px_81">40px</dimen>
 </resources>

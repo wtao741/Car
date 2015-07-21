@@ -48,6 +48,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/home_park"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
@@ -78,6 +79,7 @@
     </RelativeLayout>
     
     <RelativeLayout
+        android:id="@+id/book_car"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"

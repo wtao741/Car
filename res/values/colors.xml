@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="head_bgm">#003e5e</color>
-    <color name="head_bgm_click">#66003e5e</color>
+    <color name="head_bgm_click">#44003e5e</color>
     <color name="home_bgm">#d3d3d3</color>
     <color name="white">#ffffff</color>
+    <color name="white_select">#C1CDC1</color>
     <color name="line_black">#2E2E2E</color>
     <color name="e4">#E4E4E4</color>
+     <color name="b5">#B5B5b5</color>
     <color name="call_textColor">#ff5837</color>
+    <color name="my_textColor">#646464</color>
+    <color name="book_car_textColor">#313131</color>
 </resources>

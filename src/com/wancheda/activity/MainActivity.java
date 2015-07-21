@@ -78,28 +78,28 @@ public class MainActivity extends TabActivity implements OnClickListener{
 			switch (flag) {
 			case 1:
 				mTabHost.setCurrentTabByTag(TAB_HOME);
-				mBut3.setImageResource(R.drawable.recommend_select);
+				mBut3.setImageResource(R.drawable.home_click);
 				mCateText3.setTextColor(COLOR_CLICK);
 				break;
 			case 2:
-				mBut3.setImageResource(R.drawable.recommend_normal);
+				mBut3.setImageResource(R.drawable.home_default);
 				mCateText3.setTextColor(COLOR_DEFAULT);
 				mTabHost.setCurrentTabByTag(TAB_ORDER);
-				mBut1.setImageResource(R.drawable.nearby_select);
+				mBut1.setImageResource(R.drawable.order_click);
 				mCateText1.setTextColor(COLOR_CLICK);
 				break;
 			case 3:
-				mBut3.setImageResource(R.drawable.recommend_normal);
+				mBut3.setImageResource(R.drawable.home_default);
 				mCateText3.setTextColor(COLOR_DEFAULT);
 				mTabHost.setCurrentTabByTag(TAB_MY);
-				mBut2.setImageResource(R.drawable.select_select);
+				mBut2.setImageResource(R.drawable.my_click);
 				mCateText2.setTextColor(COLOR_CLICK);
 				break;
 			case 4:
-				mBut3.setImageResource(R.drawable.recommend_normal);
+				mBut3.setImageResource(R.drawable.home_default);
 				mCateText3.setTextColor(COLOR_DEFAULT);
 				mTabHost.setCurrentTabByTag(TAB_CALL);
-				mBut4.setImageResource(R.drawable.sort_select);
+				mBut4.setImageResource(R.drawable.call_click);
 				mCateText4.setTextColor(COLOR_CLICK);
 				break;
 			}
@@ -111,10 +111,10 @@ public class MainActivity extends TabActivity implements OnClickListener{
 		if (mCurTabId == v.getId()) {
 			return;
 		}
-		mBut3.setImageResource(R.drawable.recommend_normal);
-		mBut1.setImageResource(R.drawable.nearby_normal);
-		mBut2.setImageResource(R.drawable.search_normal);
-		mBut4.setImageResource(R.drawable.sort_normal);
+		mBut3.setImageResource(R.drawable.home_default);
+		mBut1.setImageResource(R.drawable.order_default);
+		mBut2.setImageResource(R.drawable.my_default);
+		mBut4.setImageResource(R.drawable.call_default);
 		mCateText1.setTextColor(COLOR_DEFAULT);
 		mCateText2.setTextColor(COLOR_DEFAULT);
 		mCateText3.setTextColor(COLOR_DEFAULT);
@@ -123,25 +123,25 @@ public class MainActivity extends TabActivity implements OnClickListener{
 		switch (checkedId) {
 		case R.id.channel3:
 			mTabHost.setCurrentTabByTag(TAB_HOME);
-			mBut3.setImageResource(R.drawable.recommend_select);
+			mBut3.setImageResource(R.drawable.home_click);
 			mCateText3.setTextColor(COLOR_CLICK);
 			flag = 1;
 			break;
 		case R.id.channel1:
 			mTabHost.setCurrentTabByTag(TAB_ORDER);
-			mBut1.setImageResource(R.drawable.nearby_select);
+			mBut1.setImageResource(R.drawable.order_click);
 			mCateText1.setTextColor(COLOR_CLICK);
 			flag = 2;
 			break;
 		case R.id.channel2:
 			mTabHost.setCurrentTabByTag(TAB_MY);
-			mBut2.setImageResource(R.drawable.select_select);
+			mBut2.setImageResource(R.drawable.my_click);
 			mCateText2.setTextColor(COLOR_CLICK);
 			flag = 3;
 			break;
 		case R.id.channel4:
 			mTabHost.setCurrentTabByTag(TAB_CALL);
-			mBut4.setImageResource(R.drawable.sort_select);
+			mBut4.setImageResource(R.drawable.call_click);
 			mCateText4.setTextColor(COLOR_CLICK);
 			flag = 4;
 			break;

@@ -10,6 +10,7 @@ import net.tsz.afinal.annotation.view.ViewInject;
 
 import com.wancheda.manager.BaseActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
@@ -17,6 +18,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 public class HomeActivity extends BaseActivity {
 
@@ -29,6 +31,9 @@ public class HomeActivity extends BaseActivity {
 	@ViewInject(id = R.id.v_dot2)
 	View dot2;
 
+	@ViewInject(id=R.id.book_car) RelativeLayout rl_book_car;
+	@ViewInject(id=R.id.home_park) RelativeLayout rl_park;
+	
 	private List<View> dots;
 	private int[] images = new int[] { R.drawable.home_advert,
 			R.drawable.viewpager1, R.drawable.viewpager2 };
@@ -52,8 +57,33 @@ public class HomeActivity extends BaseActivity {
 		setContentView(R.layout.activity_home);
 
 		initViewPager();
+		
+		initEvent();
 	}
 
+	private void initEvent() {
+		rl_book_car.setOnClickListener(this);
+		rl_park.setOnClickListener(this);
+	}
+
+	@Override
+	public void onClick(View v) {
+		super.onClick(v);
+		Class target = null;
+		switch (v.getId()) {
+		case R.id.book_car:
+			target = BookCarActivity.class;
+			break;
+		case R.id.home_park:
+			target = ParkActivity.class;
+			break;
+		default:
+			break;
+		}
+	   Intent intent = new Intent(this,target);
+	   startActivity(intent);
+	}
+	
 	@Override
 	protected void onStart() {
 		scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();

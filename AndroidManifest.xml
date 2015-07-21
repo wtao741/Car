@@ -39,7 +39,14 @@
             android:name=".CallActivity"
             android:screenOrientation="portrait">
         </activity>
-        
+        <activity 
+            android:name=".BookCarActivity"
+            android:screenOrientation="portrait">
+        </activity>
+         <activity 
+            android:name=".ParkActivity"
+            android:screenOrientation="portrait">
+        </activity>
          <!-- 百度定位服务 -->
         <service
             android:name="com.baidu.location.f"

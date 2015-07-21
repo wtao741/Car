@@ -8,22 +8,36 @@
     <string name="tab_order">订单</string>
     <string name="tab_my">我的</string>
     <string name="tab_call">客服</string>
-    
     <string name="call_vip">万车达旗舰店</string>
     <string name="call_vip_address">地址：机场二高速,金榆路口出金榆路第二个红绿灯</string>
     <string name="call_vip_phone_hint">电话：</string>
     <string name="call_vip_phone"> 010-8430-3353</string>
-   
     <string name="call_south">万车达南中心</string>
     <string name="call_south_address">地址：南四环,肖村桥往南第二个红绿灯右转即到</string>
     <string name="call_south_phone"> 010-6113-7113</string>
-   
     <string name="call_north">万车达北中心</string>
     <string name="call_north_address">地址：北五环,天通苑龙德广场往西1.8公里即到</string>
     <string name="call_north_phone"> 010-8241-9535</string>
-   
     <string name="call_cdu">成都分中心</string>
     <string name="call_cdu_address">地址：日月大道二段128段</string>
     <string name="call_cdu_phone"> 028-6199-5518</string>
-
+    <string name="my_car_hint">添加爱车</string>
+    <string name="my_car_hint1">立即享受专业管家服务</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_order_hint">查看所有订单</string>
+    <string name="my_account">账号与安全</string>
+    <string name="my_address">地址管理,密码等</string>
+    <string name="my_adjust">意见与反馈</string>
+    <string name="my_setting">设置</string>
+    <string name="my_help">帮助</string>
+    <string name="my_call">致电我们</string>
+    <string name="my_service">客户服务协议</string>
+    <string name="book_people_hint">请输入联系人信息</string>
+    <string name="book_time_hint">预约时间 及地点</string>
+    <string name="book_time_hint1">请选择时间</string>
+     <string name="book_des_hint">添加备注</string>
+     
+     <string name="park_time_hint">请选择停车时间</string>
+     <string name="park_time_hint1">请选择还车时间</string>
+      <string name="park_address_hint">请选择航站楼</string>
 </resources>
